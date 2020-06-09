@@ -12,7 +12,6 @@ const Repos = (props) => {
 
       fetchData();
    }, [props.user]);
-   console.log(repos);
    return (
       <div className="followers-page">
          <h3>{props.user.login}'s repositories</h3>

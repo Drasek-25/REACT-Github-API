@@ -13,7 +13,6 @@ const Followers = (props) => {
 
       fetchData();
    }, [props.user]);
-   console.log(followers);
    return (
       <div className="followers-page">
          <h3>Followers of {props.user.login}</h3>
@@ -26,7 +25,7 @@ const Followers = (props) => {
                      <img
                         className="smallavatar"
                         src={follower.avatar_url}
-                        alt={follower.avatar.url}
+                        alt={follower.avatar_url}
                      />
                      <span className="followername">{follower.login}</span>
                   </Link>
